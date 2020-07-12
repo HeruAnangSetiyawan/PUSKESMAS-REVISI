@@ -1,0 +1,1 @@
+SELECT pas.nama_pasien, rt.no_rekamedis FROM tbl_pasien as pas, tbl_riwayat_tindakan as rt where pas.no_rekamedis = rt.no_rekamedis

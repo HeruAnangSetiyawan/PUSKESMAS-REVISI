@@ -1,0 +1,1 @@
+SELECT pd.*, pol.nama_poli, dok.nama_dokter, pas.nama_pasien FROM tbl_pendaftaran as pd, tbl_poli as pol, tbl_dokter as dok, tbl_pasien as pas where pd.kode_dokter_penanggung_jawab=dok.kode_dokter AND pd.id_poli=pol.id_poli AND pd.no_rekamedis=pas.no_rekamedis AND MONTH(pd.tanggal_daftar)=MONTH(NOW())
